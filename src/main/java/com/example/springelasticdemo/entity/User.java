@@ -10,7 +10,7 @@ import org.springframework.data.elasticsearch.annotations.Document;
  * @description
  */
 @Data
-@Document(indexName = "test")
+@Document(indexName = "test", createIndex = false)
 public class User {
 
     @Id
