@@ -39,7 +39,7 @@ public class EsOperatorDemo {
     private RestHighLevelClient highLevelClient;
 
     public void update() {
-        IndexCoordinates test = IndexCoordinates.of("test-*");
+        IndexCoordinates test = IndexCoordinates.of("test-20200101");
         UpdateQuery build = UpdateQuery.builder("bbb").withDocument(Document.create().append("age", "2")).build();
         UpdateQuery.builder("bbb");
 
